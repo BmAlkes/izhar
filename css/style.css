@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+
+body,
+p,
+h1,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #252525;
+  background: rgb(0, 0, 0, 0.8);
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+.header-logo {
+  flex-grow: 1;
+  padding: 20px;
+  font-size: 1.45em;
+  font-family: "Gotu", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: black 0.3em 0.3em 0.2em;
+  margin-top: 20px;
+}
+
+.header-nav {
+  flex-grow: 1;
+}
+.header ul {
+  display: flex;
+  padding: 20px;
+}
+.header li {
+  margin-left: 20px;
+  padding: 15px;
+  border-top: none;
+}
+.header li a {
+  color: #fff;
+  font-size: 1.45em;
+  text-shadow: black 0.3em 0.3em 0.1em;
+}
+.background {
+  background-image: url("../img/izhar7.png");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+@media (max-width: 739px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .header-logo {
+    font-size: 15px;
+    text-align: center;
+  }
+  .header-nav ul {
+    padding: 0;
+  }
+  .header-nav li {
+    padding: 5px;
+    margin: 0;
+  }
+  .header-nav li a {
+    font-size: 1em;
+  }
+  .background {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* about */
+.campo-texto {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.campo-texto h1,
+h2 {
+  color: #fff;
+  font-size: 2.6em;
+  padding: 20px;
+  font-weight: bold;
+}
+.campo-texto p {
+  color: #fff;
+  font-size: 1.65em;
+  line-height: 1.8em;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+.campo-texto ul {
+  margin-top: 20px;
+}
+.campo-texto ul li {
+  color: #fff;
+  font-size: 1.65em;
+  line-height: 1.8em;
+  letter-spacing: 2px;
+}
+.campo-texto h2 {
+  text-align: center;
+}
+
+.left {
+  text-align: right;
+}
+.background2 {
+  background-image: url("../img/izhar8.png");
+  width: 100%;
+  height: 500px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 739px) {
+  .campo-texto h1 {
+    font-size: 1.5em;
+  }
+  .campo-texto p {
+    max-width: 300px;
+    font-size: 1.4em;
+  }
+  .background2 {
+  background-size: 100%;
+height: 300px;
+  }
+}
+
+/* training page */
+.training h2 {
+  color: #fff;
+  font-size: 2.6em;
+  padding: 30px;
+  font-weight: bold;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.training p {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.movies {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+embed {
+  width: 400px;
+  height: 400px;
+}
+
+.pictures h2 {
+  color: #fff;
+  font-size: 2.6em;
+  padding: 30px;
+  font-weight: bold;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.pictures2 {
+  display: flex;
+}
+
+.pictures img {
+  max-width: 100%;
+  height: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.background3 {
+  background-image: url("../img/izhar6.png");
+  width: 100%;
+  height: 600px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+@media (max-width: 739px) {
+	.background3{
+        width: 100%;
+        height: 300px;
+    }
+    .training h2{
+display: none;
+    }
+    .movies{
+        flex-wrap: wrap;
+    }
+    embed{
+        margin-bottom: 20px;
+    }
+}
+
+/* page of pictures */
+
+.background4 {
+  background-image: url("../img/capa1.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.picture-area {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.center {
+  text-align: center;
+}
+.pictures-profile {
+  max-width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.pictures-profile img {
+  max-width: 400px;
+  margin: 20px;
+  align-content: space-around;
+  border: 2px solid black;
+}
+@media (max-width: 739px) {
+    .background4{
+        max-width: 100%;
+        height: 300px;
+;
+    }
+    .pictures-profile img{
+        max-width: 100%;
+        height: 250px;
+    }
+}
+
+/* contact Page */
+.background5 {
+  background-image: url("../img/capa2.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.contact img {
+  width: 150px;
+  padding: 20px;
+  margin-left: 20px;
+}
+.contact a {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer {
+  text-align: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-top: 3px solid black;
+  background-color: rgb(0, 0, 0, 0.8);
+
+  width: 100%;
+}
+.footer2 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-top: 3px solid black;
+  background-color: rgb(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer span,
+.footer2 span {
+  color: red;
+}
